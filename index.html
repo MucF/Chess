@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link  href="css/all.css" rel="Stylesheet" type="text/css" />
+<style>footer{text-align:center;}</style>
+<title>五子棋</title>
+<script src="js/getxy.js"></script>
+<script src="js/drawRect.js"></script>
+<script src="js/onSt.js"></script>
+</head>
+<body onload="drawRect();" onmousedown=onSt(event);>
+<canvas id="canvas" width="960" height="960" >
+	您的浏览器不支持HTML5
+</canvas>
+</body>
+</html>
+<script type="text/javascript">
+	var req=new Array(16);
+	for(var i=0;i<16;i++)
+	{
+		req[i]=new Array(16);
+		for(var j=0;j<16;j++)
+		{
+			req[i][j]=0;
+		}
+	}
+	var b=true;
+	var x,y;
+	var e=window.event || e;
+	var pic = new Image();  
+	var canvas = document.getElementById("canvas");
+	var context = canvas.getContext("2d");
+</script>
